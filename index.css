@@ -6,7 +6,7 @@
 #header-section {
     height: 390px;
     width: 100%;
-    border: 3px blue solid;
+    border: 1px #7300ff solid;
     background: #7d6ce9;
     color: white;
     text-align: center;
@@ -42,4 +42,25 @@
 
 
     }
+
+#main-section {
+    background: #d4d4d4;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.convert-section {
+    background-color: white;
+    width: 40%;
+    height: 100px;
+    text-align: center;
+    margin: 0 0 40px 0;
+    display: flex;
+    justify-content: center;
+}
 
