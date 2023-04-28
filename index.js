@@ -22,9 +22,13 @@ btn = document.getElementById("convert_btn")
 inputEl = document.getElementById("input-el")
 
 btn.addEventListener("click", function(){
-    meters_and_feet(inputEl.value)
-    liters_and_gallons(inputEl.value)
-    kilos_and_pounds(inputEl.value)
+    if(parseInt(inputEl.value)){
+        meters_and_feet(inputEl.value)
+        liters_and_gallons(inputEl.value)
+        kilos_and_pounds(inputEl.value)
+    } else {
+        alert("Not a number!")
+    }
 })
 
 function meters_and_feet(input_num){
