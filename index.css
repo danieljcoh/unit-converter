@@ -3,11 +3,15 @@
     margin: 0;
 }
 
+body {
+    background: #f4f4f4;
+}
+
 #header-section {
     height: 390px;
     width: 100%;
     border: 1px #7300ff solid;
-    background: #7d6ce9;
+    background: #6943ff;  /* real color */
     color: white;
     text-align: center;
 }
@@ -20,7 +24,7 @@
         margin-bottom: 60px;
     }
 
-    #header-section p {
+    #header-section input {
         border: 1px white solid;
         border-radius: 8px;
         width: 120px;
@@ -44,8 +48,8 @@
     }
 
 #main-section {
-    background: #d4d4d4;
-    height: 700px;
+    background: #f4f4f4;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +64,14 @@
     height: 100px;
     text-align: center;
     margin: 0 0 40px 0;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    border-radius: 9px;
+}
+
+.convert-section h4{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #7300ff;
 }
 
