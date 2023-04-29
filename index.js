@@ -19,8 +19,11 @@ cardThree = document.getElementById("card-3")
 // BUTTON
 btn = document.getElementById("convert_btn")
 
+// INPUT
 inputEl = document.getElementById("input-el")
 
+
+// EVENT LISTENERS
 btn.addEventListener("click", function(){
     if(parseInt(inputEl.value)){
         meters_and_feet(inputEl.value)
@@ -31,24 +34,26 @@ btn.addEventListener("click", function(){
     }
 })
 
+
+// FUNCTIONS
 function meters_and_feet(input_num){
     const meters = (input_num * 3.281).toFixed(3)
     const feet = (input_num * 0.3048).toFixed(3)
-    length_out = `${input_num} meters = ${meters} || ${input_num} feet = ${feet}`
+    length_out = `${input_num} meters = ${meters} feet || ${input_num} feet = ${feet} meters`
     cardOne.textContent = length_out
 }
 
 function liters_and_gallons(input_num){
     const liters = (input_num * 0.264).toFixed(3)
     const gallons = (input_num * 3.78541).toFixed(3)
-    volume_out = `${input_num} liters = ${liters} || ${input_num} gallons = ${gallons}`
+    volume_out = `${input_num} liters = ${liters} gallons || ${input_num} gallons = ${gallons} liters`
     cardTwo.textContent = volume_out
 }
 
 function kilos_and_pounds(input_num){
     const kilos = (input_num * 2.204).toFixed(3)
     const pounds = (input_num * 0.453592).toFixed(3)
-    weight_out = `${input_num} kilos = ${kilos} || ${input_num} pounds = ${pounds}`
+    weight_out = `${input_num} kilos = ${kilos} pounds || ${input_num} pounds = ${pounds} kilograms`
     cardThree.textContent = weight_out
 }
 
